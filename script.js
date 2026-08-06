@@ -1,9 +1,12 @@
-const appointmentForm = document.querySelector(".appointment-form");
+const appointmentForm = document.getElementById("appointmentForm");
+
 if (appointmentForm) {
   appointmentForm.addEventListener("submit", function (event) {
     event.preventDefault();
-    let name = appointmentForm.querySelector("input[type='text']").value;
-    let phone = appointmentForm.querySelector("input[type='tel']").value;
+
+    let name = document.getElementById("patientName").value.trim();
+    let phone = document.getElementById("phone").value.trim();
+
     if (name === "" || phone === "") {
       alert("Please fill all required details");
     } else {
@@ -12,7 +15,9 @@ if (appointmentForm) {
         phoneNumber: phone,
         date: new Date().toLocaleDateString(),
       };
+
       localStorage.setItem("appointment", JSON.stringify(appointment));
+
       const modal = new bootstrap.Modal(
         document.getElementById("confirmModal"),
       );
@@ -22,13 +27,17 @@ if (appointmentForm) {
     }
   });
 }
-const contactForm = document.querySelector(".contact-form");
+
+const contactForm = document.getElementById("contactForm");
+
 if (contactForm) {
   contactForm.addEventListener("submit", function (event) {
     event.preventDefault();
+
     alert(
       "Thank you for contacting Horizon Healthcare. We will get back to you soon.",
     );
+
     contactForm.reset();
   });
 }
