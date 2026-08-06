@@ -46,7 +46,6 @@ a {
 .nav-link {
   font-weight: 500;
   margin-left: 18px;
-  transition: var(--transition);
 }
 .nav-link:hover,
 .nav-link.active {
@@ -57,7 +56,6 @@ a {
   border-color: var(--primary);
   padding: 12px 30px;
   border-radius: 50px;
-  transition: var(--transition);
 }
 .btn-primary:hover {
   background: var(--accent);
@@ -68,7 +66,6 @@ a {
 .btn-outline-primary {
   padding: 12px 30px;
   border-radius: 50px;
-  transition: var(--transition);
 }
 .btn-outline-primary:hover {
   background: var(--primary);
@@ -102,7 +99,6 @@ a {
   background: var(--surface);
   border: none;
   border-radius: var(--radius);
-  transition: var(--transition);
 }
 .card:hover {
   transform: translateY(-8px);
