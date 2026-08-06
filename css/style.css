@@ -155,6 +155,6 @@ footer hr {
   }
 }
 .doctor-img {
-    object-fit: cover;
-    border: 5px solid #E0F2FE;
+  object-fit: cover;
+  border: 5px solid #e0f2fe;
 }
