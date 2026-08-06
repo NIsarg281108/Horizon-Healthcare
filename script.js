@@ -13,7 +13,11 @@ if (appointmentForm) {
         date: new Date().toLocaleDateString(),
       };
       localStorage.setItem("appointment", JSON.stringify(appointment));
-      alert("Appointment booked successfully!");
+      const modal = new bootstrap.Modal(
+        document.getElementById("confirmModal"),
+      );
+
+      modal.show();
       appointmentForm.reset();
     }
   });
@@ -27,34 +31,4 @@ if (contactForm) {
     );
     contactForm.reset();
   });
-}
-const healthForm = document.querySelector(".health-form");
-if (healthForm) {
-  healthForm.addEventListener("submit", function (event) {
-    event.preventDefault();
-    alert("Health details saved successfully!");
-
-    healthForm.reset();
-  });
-} 
-function showBooking() {
-  window.location = "#booking-form";
-}
-function showPatientSearch() {
-  document.getElementById("patient-search").style.display = "block";
-  window.location = "#patient-search";
-}
-function showEmergency() {
-  document.getElementById("emergency-info").style.display = "block";
-  window.location = "#emergency-info";
-}
-function searchPatient() {
-  let patientId = document.getElementById("patientId").value;
-  let result = document.getElementById("patient-result");
-  if (patientId === "") {
-    result.innerHTML = "Please enter Patient ID";
-  } else {
-    result.innerHTML =
-      "Patient record found. You can continue booking your appointment.";
-  }
 }
