@@ -4,9 +4,6 @@ if (appointmentForm) {
   appointmentForm.addEventListener("submit", function (event) {
     event.preventDefault();
 
-    let name = document.getElementById("patientName").value.trim();
-    let phone = document.getElementById("phone").value.trim();
-
     if (name === "" || phone === "") {
       alert("Please fill all required details");
     } else {
