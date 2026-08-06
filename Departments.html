@@ -15,27 +15,27 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="bg-primary text-white py-2">
+    <div class="bg-primary text-white py-2" id="topBar">
       <div class="container">
         <div class="row text-center text-md-start">
-          <div class="col-md-4">
+          <div class="col-md-4 contact-info">
             <i class="bi bi-telephone"></i>
             +91 98765 43210
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 contact-info">
             <i class="bi bi-envelope"></i>
             info@horizonhealthcare.com
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 contact-info">
             <i class="bi bi-clock"></i>
             Mon - Sat: 8 AM - 8 PM
           </div>
         </div>
       </div>
     </div>
-    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top" id="mainNavbar">
       <div class="container">
-        <a class="navbar-brand fw-bold" href="index.html">
+        <a class="navbar-brand fw-bold" href="index.html" id="brandLogo">
           🌅 Horizon Healthcare
         </a>
         <button
@@ -48,24 +48,24 @@
         <div class="collapse navbar-collapse" id="navbarMenu">
           <ul class="navbar-nav ms-auto align-items-lg-center">
             <li class="nav-item">
-              <a class="nav-link" href="index.html"> Home </a>
+              <a class="nav-link" href="index.html" id="navHome"> Home </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html"> About </a>
+              <a class="nav-link" href="about.html" id="navAbout"> About </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="departments.html">
+              <a class="nav-link active" href="departments.html" id="navDepartments">
                 Departments
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="doctors.html"> Doctors </a>
+              <a class="nav-link" href="doctors.html" id="navDoctors"> Doctors </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html"> Contact </a>
+              <a class="nav-link" href="contact.html" id="navContact"> Contact </a>
             </li>
             <li class="nav-item ms-lg-3">
-              <a href="appointment.html" class="btn btn-primary">
+              <a href="appointment.html" class="btn btn-primary" id="navAppointment">
                 Book Appointment
               </a>
             </li>
@@ -73,74 +73,74 @@
         </div>
       </div>
     </nav>
-    <section class="hero-section text-center">
+    <section class="hero-section text-center" id="heroSection">
       <div class="container">
-        <h1>Our Medical Departments</h1>
-        <p class="lead">
+        <h1 id="heroTitle">Our Medical Departments</h1>
+        <p class="lead" id="heroDescription">
           Specialized care from experienced healthcare professionals.
         </p>
       </div>
     </section>
-    <section>
+    <section id="departmentsSection">
       <div class="container">
-        <h2 class="section-title">Healthcare Specialties</h2>
+        <h2 class="section-title" id="departmentsTitle">Healthcare Specialties</h2>
         <div class="row g-4">
           <div class="col-lg-4 col-md-6">
-            <div class="card p-4 text-center h-100">
+            <div class="card p-4 text-center h-100 department-card">
               <i class="bi bi-heart-pulse display-4"></i>
               <h4 class="mt-3">Cardiology</h4>
               <p>Complete heart care with advanced diagnosis and treatment.</p>
-              <a href="appointment.html" class="btn btn-outline-primary">
+              <a href="appointment.html" class="btn btn-outline-primary department-btn">
                 Consult Doctor
               </a>
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
-            <div class="card p-4 text-center h-100">
+            <div class="card p-4 text-center h-100 department-card">
               <i class="bi bi-person-standing display-4"></i>
               <h4 class="mt-3">Neurology</h4>
               <p>Specialized care for brain and nervous system conditions.</p>
-              <a href="appointment.html" class="btn btn-outline-primary">
+              <a href="appointment.html" class="btn btn-outline-primary department-btn">
                 Consult Doctor
               </a>
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
-            <div class="card p-4 text-center h-100">
+            <div class="card p-4 text-center h-100 department-card">
               <i class="bi bi-bandaid display-4"></i>
               <h4 class="mt-3">Orthopedics</h4>
               <p>Treatment for bones, joints, and movement-related problems.</p>
-              <a href="appointment.html" class="btn btn-outline-primary">
+              <a href="appointment.html" class="btn btn-outline-primary department-btn">
                 Consult Doctor
               </a>
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
-            <div class="card p-4 text-center h-100">
+            <div class="card p-4 text-center h-100 department-card">
               <i class="bi bi-emoji-smile display-4"></i>
               <h4 class="mt-3">Pediatrics</h4>
               <p>Healthcare services specially designed for children.</p>
-              <a href="appointment.html" class="btn btn-outline-primary">
+              <a href="appointment.html" class="btn btn-outline-primary department-btn">
                 Consult Doctor
               </a>
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
-            <div class="card p-4 text-center h-100">
+            <div class="card p-4 text-center h-100 department-card">
               <i class="bi bi-eyedropper display-4"></i>
               <h4 class="mt-3">Dermatology</h4>
               <p>Professional skin and hair care treatments by professionals.</p>
-              <a href="appointment.html" class="btn btn-outline-primary">
+              <a href="appointment.html" class="btn btn-outline-primary department-btn">
                 Consult Doctor
               </a>
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
-            <div class="card p-4 text-center h-100">
+            <div class="card p-4 text-center h-100 department-card">
               <i class="bi bi-capsule display-4"></i>
               <h4 class="mt-3">General Medicine</h4>
               <p>Complete healthcare support for everyday medical needs.</p>
-              <a href="appointment.html" class="btn btn-outline-primary">
+              <a href="appointment.html" class="btn btn-outline-primary department-btn">
                 Consult Doctor
               </a>
             </div>
@@ -148,32 +148,32 @@
         </div>
       </div>
     </section>
-    <section class="bg-light">
+    <section class="bg-light" id="advancedHealthcareSection">
       <div class="container">
         <div class="row align-items-center g-5">
           <div class="col-lg-6">
-            <h2>Advanced Healthcare Under One Roof</h2>
-            <p>
+            <h2 id="advancedTitle">Advanced Healthcare Under One Roof</h2>
+            <p id="advancedDescription">
               Our departments work together to provide complete healthcare
               solutions with experienced doctors and modern facilities.
             </p>
             <ul class="list-unstyled">
-              <li>
+              <li class="feature-item">
                 <i class="bi bi-check-circle text-primary"></i>
                 Qualified Specialists
               </li>
-              <li>
+              <li class="feature-item">
                 <i class="bi bi-check-circle text-primary"></i>
                 Modern Medical Equipment
               </li>
-              <li>
+              <li class="feature-item">
                 <i class="bi bi-check-circle text-primary"></i>
                 Patient-Centered Treatment
               </li>
             </ul>
           </div>
           <div class="col-lg-6">
-            <div class="bg-white rounded-4 shadow-sm p-5 text-center">
+            <div class="bg-white rounded-4 shadow-sm p-5 text-center facility-image">
               <i class="bi bi-hospital display-1 text-primary"></i>
               <p class="mt-3">Healthcare Facility Image</p>
             </div>
@@ -181,42 +181,42 @@
         </div>
       </div>
     </section>
-    <section class="bg-primary text-white text-center">
+    <section class="bg-primary text-white text-center" id="ctaSection">
       <div class="container">
-        <h2 class="text-white">Find The Right Specialist For You</h2>
-        <p>Book an appointment with our expert doctors.</p>
-        <a href="appointment.html" class="btn btn-warning">
+        <h2 class="text-white" id="ctaTitle">Find The Right Specialist For You</h2>
+        <p id="ctaDescription">Book an appointment with our expert doctors.</p>
+        <a href="appointment.html" class="btn btn-warning" id="ctaButton">
           Book Appointment
         </a>
       </div>
     </section>
-    <footer>
+    <footer id="mainFooter">
       <div class="container">
         <div class="row g-4">
           <div class="col-lg-4">
-            <h5>🌅 Horizon Healthcare</h5>
-            <p>Providing reliable and modern healthcare services.</p>
+            <h5 id="footerBrand">🌅 Horizon Healthcare</h5>
+            <p id="footerDescription">Providing reliable and modern healthcare services.</p>
           </div>
           <div class="col-lg-4">
-            <h5>Quick Links</h5>
-            <p>Home</p>
-            <p>Doctors</p>
-            <p>Appointment</p>
+            <h5 id="footerQuickLinks">Quick Links</h5>
+            <p><a href="index.html" class="footer-link">Home</a></p>
+            <p><a href="doctors.html" class="footer-link">Doctors</a></p>
+            <p><a href="appointment.html" class="footer-link">Appointment</a></p>
           </div>
           <div class="col-lg-4">
-            <h5>Contact</h5>
-            <p>
+            <h5 id="footerContact">Contact</h5>
+            <p class="contact-info">
               <i class="bi bi-telephone"></i>
               +91 98765 43210
             </p>
-            <p>
+            <p class="contact-info">
               <i class="bi bi-geo-alt"></i>
               Mumbai, India
             </p>
           </div>
         </div>
         <hr />
-        <p class="text-center mb-0">
+        <p class="text-center mb-0" id="copyright">
           © 2026 Horizon Healthcare. All Rights Reserved.
         </p>
       </div>

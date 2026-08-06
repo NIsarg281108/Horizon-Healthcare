@@ -15,27 +15,27 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="bg-primary text-white py-2">
+    <div class="bg-primary text-white py-2" id="topBar">
       <div class="container">
         <div class="row text-center text-md-start">
-          <div class="col-md-4">
+          <div class="col-md-4 contact-info">
             <i class="bi bi-telephone"></i>
             +91 98765 43210
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 contact-info">
             <i class="bi bi-envelope"></i>
             info@horizonhealthcare.com
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 contact-info">
             <i class="bi bi-clock"></i>
             Mon - Sat : 8 AM - 8 PM
           </div>
         </div>
       </div>
     </div>
-    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top" id="mainNavbar">
       <div class="container">
-        <a class="navbar-brand fw-bold" href="index.html">
+        <a class="navbar-brand fw-bold" href="index.html" id="brandLogo">
           🌅 Horizon Healthcare
         </a>
         <button
@@ -48,22 +48,22 @@
         <div class="collapse navbar-collapse" id="navbarMenu">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html"> Home </a>
+              <a class="nav-link" href="index.html" id="navHome"> Home </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html"> About </a>
+              <a class="nav-link" href="about.html" id="navAbout"> About </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="departments.html"> Departments </a>
+              <a class="nav-link" href="departments.html" id="navDepartments"> Departments </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="doctors.html"> Doctors </a>
+              <a class="nav-link active" href="doctors.html" id="navDoctors"> Doctors </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html"> Contact </a>
+              <a class="nav-link" href="contact.html" id="navContact"> Contact </a>
             </li>
             <li class="nav-item ms-lg-3">
-              <a href="appointment.html" class="btn btn-primary">
+              <a href="appointment.html" class="btn btn-primary" id="navAppointment">
                 Book Appointment
               </a>
             </li>
@@ -71,20 +71,20 @@
         </div>
       </div>
     </nav>
-    <section class="hero-section text-center">
+    <section class="hero-section text-center" id="heroSection">
       <div class="container">
-        <h1>Our Expert Doctors</h1>
-        <p class="lead">
+        <h1 id="heroTitle">Our Expert Doctors</h1>
+        <p class="lead" id="heroDescription">
           Meet our experienced specialists dedicated to providing quality
           healthcare.
         </p>
       </div>
     </section>
-    <section>
+    <section id="doctorsSection">
       <div class="container">
         <div class="row g-4">
           <div class="col-md-4">
-            <div class="card text-center p-4 h-100">
+            <div class="card text-center p-4 h-100 doctor-card">
               <img
                 src="images/doctors/doctor1.jpg"
                 class="rounded-circle mx-auto mb-3 doctor-img"
@@ -95,13 +95,13 @@
               <h4>Dr. Sarah Patel</h4>
               <p class="text-primary">Cardiologist</p>
               <p>Specialist in heart care and advanced cardiac treatments.</p>
-              <a href="appointment.html" class="btn btn-primary">
+              <a href="appointment.html" class="btn btn-primary doctor-btn">
                 Book Appointment
               </a>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card text-center p-4 h-100">
+            <div class="card text-center p-4 h-100 doctor-card">
               <img
                 src="images/doctors/doctor2.jpg"
                 class="rounded-circle mx-auto mb-3 doctor-img"
@@ -112,13 +112,13 @@
               <h4>Dr. Rahul Mehta</h4>
               <p class="text-primary">Neurologist</p>
               <p>Expert in nervous system care and neurological treatment.</p>
-              <a href="appointment.html" class="btn btn-primary">
+              <a href="appointment.html" class="btn btn-primary doctor-btn">
                 Book Appointment
               </a>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card text-center p-4 h-100">
+            <div class="card text-center p-4 h-100 doctor-card">
               <img
                 src="images/doctors/doctor3.jpg"
                 class="rounded-circle mx-auto mb-3 doctor-img"
@@ -132,7 +132,7 @@
                 Providing compassionate healthcare for children and their
                 treatments.
               </p>
-              <a href="appointment.html" class="btn btn-primary">
+              <a href="appointment.html" class="btn btn-primary doctor-btn">
                 Book Appointment
               </a>
             </div>
@@ -140,33 +140,33 @@
         </div>
       </div>
     </section>
-    <footer>
+    <footer id="mainFooter">
       <div class="container">
         <div class="row g-4">
           <div class="col-lg-4">
-            <h5>🌅 Horizon Healthcare</h5>
-            <p>Trusted healthcare with modern solutions.</p>
+            <h5 id="footerBrand">🌅 Horizon Healthcare</h5>
+            <p id="footerDescription">Trusted healthcare with modern solutions.</p>
           </div>
           <div class="col-lg-4">
-            <h5>Quick Links</h5>
-            <p>About</p>
-            <p>Departments</p>
-            <p>Appointment</p>
+            <h5 id="footerQuickLinks">Quick Links</h5>
+            <p><a href="about.html" class="footer-link">About</a></p>
+            <p><a href="departments.html" class="footer-link">Departments</a></p>
+            <p><a href="appointment.html" class="footer-link">Appointment</a></p>
           </div>
           <div class="col-lg-4">
-            <h5>Contact</h5>
-            <p>
+            <h5 id="footerContact">Contact</h5>
+            <p class="contact-info">
               <i class="bi bi-telephone"></i>
               +91 98765 43210
             </p>
-            <p>
+            <p class="contact-info">
               <i class="bi bi-geo-alt"></i>
               Mumbai, India
             </p>
           </div>
         </div>
         <hr />
-        <p class="text-center mb-0">
+        <p class="text-center mb-0" id="copyright">
           © 2026 Horizon Healthcare. All Rights Reserved.
         </p>
       </div>

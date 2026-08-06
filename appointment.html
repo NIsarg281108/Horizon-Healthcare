@@ -15,27 +15,27 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="bg-primary text-white py-2">
+    <div class="bg-primary text-white py-2" id="topBar">
       <div class="container">
         <div class="row text-center text-md-start">
-          <div class="col-md-4">
+          <div class="col-md-4 contact-info">
             <i class="bi bi-telephone"></i>
             +91 98765 43210
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 contact-info">
             <i class="bi bi-envelope"></i>
             info@horizonhealthcare.com
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 contact-info">
             <i class="bi bi-clock"></i>
             Mon - Sat: 8 AM - 8 PM
           </div>
         </div>
       </div>
     </div>
-    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top" id="mainNavbar">
       <div class="container">
-        <a class="navbar-brand fw-bold" href="index.html">
+        <a class="navbar-brand fw-bold" href="index.html" id="brandLogo">
           🌅 Horizon Healthcare
         </a>
         <button
@@ -48,22 +48,22 @@
         <div class="collapse navbar-collapse" id="navbarMenu">
           <ul class="navbar-nav ms-auto align-items-lg-center">
             <li class="nav-item">
-              <a class="nav-link" href="index.html"> Home </a>
+              <a class="nav-link" href="index.html" id="navHome"> Home </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html"> About </a>
+              <a class="nav-link" href="about.html" id="navAbout"> About </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="departments.html"> Departments </a>
+              <a class="nav-link" href="departments.html" id="navDepartments"> Departments </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="doctors.html"> Doctors </a>
+              <a class="nav-link" href="doctors.html" id="navDoctors"> Doctors </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html"> Contact </a>
+              <a class="nav-link" href="contact.html" id="navContact"> Contact </a>
             </li>
             <li class="nav-item ms-lg-3">
-              <a href="appointment.html" class="btn btn-primary">
+              <a href="appointment.html" class="btn btn-primary" id="navAppointment">
                 Book Appointment
               </a>
             </li>
@@ -71,25 +71,26 @@
         </div>
       </div>
     </nav>
-    <section class="hero-section text-center">
+    <section class="hero-section text-center" id="heroSection">
       <div class="container">
-        <h1>Book Your Appointment</h1>
-        <p class="lead">Schedule a visit with our healthcare specialists.</p>
+        <h1 id="heroTitle">Book Your Appointment</h1>
+        <p class="lead" id="heroDescription">Schedule a visit with our healthcare specialists.</p>
       </div>
     </section>
-    <section>
+    <section id="appointmentSection">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-9">
-            <div class="card p-4 p-md-5 shadow-sm">
-              <h2 class="mb-4 text-center">Appointment Details</h2>
+            <div class="card p-4 p-md-5 shadow-sm appointment-card">
+              <h2 class="mb-4 text-center" id="appointmentTitle">Appointment Details</h2>
               <form id="appointmentForm" class="appointment-form">
-                <h5 class="mb-3">Patient Information</h5>
+                <h5 class="mb-3" id="patientInfoTitle">Patient Information</h5>
                 <div class="row g-3">
                   <div class="col-md-6">
                     <label class="form-label"> Full Name </label>
                     <input
                       type="text"
+                      id="name"
                       class="form-control"
                       placeholder="Enter your name"
                     />
@@ -98,6 +99,7 @@
                     <label class="form-label"> Email </label>
                     <input
                       type="email"
+                      id="email"
                       class="form-control"
                       placeholder="Enter your email"
                     />
@@ -106,6 +108,7 @@
                     <label class="form-label"> Phone Number </label>
                     <input
                       type="tel"
+                      id="phone"
                       class="form-control"
                       placeholder="Enter phone number"
                     />
@@ -114,17 +117,18 @@
                     <label class="form-label"> Age </label>
                     <input
                       type="number"
+                      id="age"
                       class="form-control"
                       placeholder="Enter age"
                     />
                   </div>
                 </div>
                 <hr class="my-4" />
-                <h5 class="mb-3">Appointment Details</h5>
+                <h5 class="mb-3" id="appointmentDetailsTitle">Appointment Details</h5>
                 <div class="row g-3">
                   <div class="col-md-6">
                     <label class="form-label"> Select Department </label>
-                    <select class="form-select">
+                    <select id="department" class="form-select">
                       <option selected>Choose Department</option>
                       <option>Cardiology</option>
                       <option>Neurology</option>
@@ -135,7 +139,7 @@
                   </div>
                   <div class="col-md-6">
                     <label class="form-label"> Select Doctor </label>
-                    <select class="form-select">
+                    <select id="doctor" class="form-select">
                       <option selected>Choose Doctor</option>
                       <option>Dr. Sarah Patel</option>
                       <option>Dr. Rahul Mehta</option>
@@ -144,11 +148,11 @@
                   </div>
                   <div class="col-md-6">
                     <label class="form-label"> Preferred Date </label>
-                    <input type="date" class="form-control" />
+                    <input type="date" id="date" class="form-control" />
                   </div>
                   <div class="col-md-6">
                     <label class="form-label"> Preferred Time </label>
-                    <select class="form-select">
+                    <select id="time" class="form-select">
                       <option>Morning</option>
                       <option>Afternoon</option>
                       <option>Evening</option>
@@ -156,28 +160,29 @@
                   </div>
                 </div>
                 <hr class="my-4" />
-                <h5 class="mb-3">Health Information</h5>
+                <h5 class="mb-3" id="healthInfoTitle">Health Information</h5>
                 <div class="mb-3">
                   <label class="form-label"> Symptoms / Health Details </label>
                   <textarea
+                    id="symptoms"
                     class="form-control"
                     rows="4"
                     placeholder="Describe your health concern"
                   ></textarea>
                 </div>
                 <div class="form-check mb-3">
-                  <input class="form-check-input" type="checkbox" />
+                  <input id="emergency" class="form-check-input" type="checkbox" />
                   <label class="form-check-label">
                     This is an emergency appointment
                   </label>
                 </div>
                 <div class="form-check mb-4">
-                  <input class="form-check-input" type="checkbox" />
+                  <input id="terms" class="form-check-input" type="checkbox" />
                   <label class="form-check-label">
                     I agree to the terms and conditions
                   </label>
                 </div>
-                <button type="submit" class="btn btn-primary w-100">
+                <button type="submit" id="submitAppointment" class="btn btn-primary w-100">
                   Confirm Appointment
                 </button>
               </form>
@@ -203,33 +208,33 @@
         </div>
       </div>
     </div>
-    <footer>
+    <footer id="mainFooter">
       <div class="container">
         <div class="row g-4">
           <div class="col-lg-4">
-            <h5>🌅 Horizon Healthcare</h5>
-            <p>Providing safe and trusted healthcare services.</p>
+            <h5 id="footerBrand">🌅 Horizon Healthcare</h5>
+            <p id="footerDescription">Providing safe and trusted healthcare services.</p>
           </div>
           <div class="col-lg-4">
-            <h5>Quick Links</h5>
-            <p>Home</p>
-            <p>Doctors</p>
-            <p>Departments</p>
+            <h5 id="footerQuickLinks">Quick Links</h5>
+            <p><a href="index.html" class="footer-link">Home</a></p>
+            <p><a href="doctors.html" class="footer-link">Doctors</a></p>
+            <p><a href="departments.html" class="footer-link">Departments</a></p>
           </div>
           <div class="col-lg-4">
-            <h5>Contact</h5>
-            <p>
+            <h5 id="footerContact">Contact</h5>
+            <p class="contact-info">
               <i class="bi bi-telephone"></i>
               +91 98765 43210
             </p>
-            <p>
+            <p class="contact-info">
               <i class="bi bi-geo-alt"></i>
               Mumbai, India
             </p>
           </div>
         </div>
         <hr />
-        <p class="text-center mb-0">
+        <p class="text-center mb-0" id="copyright">
           © 2026 Horizon Healthcare. All Rights Reserved.
         </p>
       </div>

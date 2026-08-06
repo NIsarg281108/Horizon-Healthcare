@@ -15,27 +15,27 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="bg-primary text-white py-2">
+    <div class="bg-primary text-white py-2" id="topBar">
       <div class="container">
         <div class="row text-center text-md-start">
-          <div class="col-md-4">
+          <div class="col-md-4 contact-info">
             <i class="bi bi-telephone"></i>
             +91 98765 43210
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 contact-info">
             <i class="bi bi-envelope"></i>
             info@horizonhealthcare.com
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 contact-info">
             <i class="bi bi-clock"></i>
             Mon - Sat: 8 AM - 8 PM
           </div>
         </div>
       </div>
     </div>
-    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top" id="mainNavbar">
       <div class="container">
-        <a class="navbar-brand fw-bold" href="index.html">
+        <a class="navbar-brand fw-bold" href="index.html" id="brandLogo">
           🌅 Horizon Healthcare
         </a>
         <button
@@ -48,22 +48,22 @@
         <div class="collapse navbar-collapse" id="navbarMenu">
           <ul class="navbar-nav ms-auto align-items-lg-center">
             <li class="nav-item">
-              <a class="nav-link" href="index.html"> Home </a>
+              <a class="nav-link" href="index.html" id="navHome"> Home </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="about.html"> About </a>
+              <a class="nav-link active" href="about.html" id="navAbout"> About </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="departments.html"> Departments </a>
+              <a class="nav-link" href="departments.html" id="navDepartments"> Departments </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="doctors.html"> Doctors </a>
+              <a class="nav-link" href="doctors.html" id="navDoctors"> Doctors </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html"> Contact </a>
+              <a class="nav-link" href="contact.html" id="navContact"> Contact </a>
             </li>
             <li class="nav-item ms-lg-3">
-              <a href="appointment.html" class="btn btn-primary">
+              <a href="appointment.html" class="btn btn-primary" id="navAppointment">
                 Book Appointment
               </a>
             </li>
@@ -71,28 +71,28 @@
         </div>
       </div>
     </nav>
-    <section class="hero-section text-center">
+    <section class="hero-section text-center" id="heroSection">
       <div class="container">
-        <h1>About Horizon Healthcare</h1>
-        <p class="lead">Building a healthier future through trusted care.</p>
+        <h1 id="heroTitle">About Horizon Healthcare</h1>
+        <p class="lead" id="heroDescription">Building a healthier future through trusted care.</p>
       </div>
     </section>
-    <section>
+    <section id="storySection">
       <div class="container">
         <div class="row align-items-center g-5">
           <div class="col-lg-6">
-            <div class="bg-light rounded-4 p-5 text-center">
+            <div class="bg-light rounded-4 p-5 text-center hospital-image">
               <i class="bi bi-building display-1 text-primary"></i>
               <p class="mt-3">Hospital Image</p>
             </div>
           </div>
           <div class="col-lg-6">
-            <h2>Our Story</h2>
-            <p>
+            <h2 id="storyTitle">Our Story</h2>
+            <p id="storyText1">
               Horizon Healthcare was created with a vision to provide
               accessible, reliable, and modern healthcare for every patient.
             </p>
-            <p>
+            <p id="storyText2">
               Our team combines medical expertise with advanced technology to
               deliver personalized treatment and better healthcare experiences.
             </p>
@@ -100,24 +100,24 @@
         </div>
       </div>
     </section>
-    <section class="bg-light">
+    <section class="bg-light" id="missionVisionSection">
       <div class="container">
         <div class="row g-4">
           <div class="col-md-6">
-            <div class="card p-5 h-100">
+            <div class="card p-5 h-100 mission-card">
               <i class="bi bi-bullseye display-5"></i>
-              <h3 class="mt-3">Our Mission</h3>
-              <p>
+              <h3 class="mt-3" id="missionTitle">Our Mission</h3>
+              <p id="missionText">
                 To provide compassionate healthcare with quality treatment,
                 modern facilities, and patient-focused services.
               </p>
             </div>
           </div>
           <div class="col-md-6">
-            <div class="card p-5 h-100">
+            <div class="card p-5 h-100 vision-card">
               <i class="bi bi-eye display-5"></i>
-              <h3 class="mt-3">Our Vision</h3>
-              <p>
+              <h3 class="mt-3" id="visionTitle">Our Vision</h3>
+              <p id="visionText">
                 To become a trusted healthcare partner by creating a healthier
                 and happier community.
               </p>
@@ -126,26 +126,26 @@
         </div>
       </div>
     </section>
-    <section>
+    <section id="valuesSection">
       <div class="container">
-        <h2 class="section-title">Our Values</h2>
+        <h2 class="section-title" id="valuesTitle">Our Values</h2>
         <div class="row g-4">
           <div class="col-md-4">
-            <div class="card text-center p-4 h-100">
+            <div class="card text-center p-4 h-100 value-card">
               <i class="bi bi-heart display-5"></i>
               <h5 class="mt-3">Compassion</h5>
               <p>We care about every patient's comfort and wellbeing.</p>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card text-center p-4 h-100">
+            <div class="card text-center p-4 h-100 value-card">
               <i class="bi bi-shield-check display-5"></i>
               <h5 class="mt-3">Trust</h5>
               <p>Providing safe and reliable healthcare services.</p>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card text-center p-4 h-100">
+            <div class="card text-center p-4 h-100 value-card">
               <i class="bi bi-lightbulb display-5"></i>
               <h5 class="mt-3">Innovation</h5>
               <p>Using modern technology for better healthcare.</p>
@@ -154,30 +154,30 @@
         </div>
       </div>
     </section>
-    <section class="bg-light">
+    <section class="bg-light" id="facilitiesSection">
       <div class="container">
-        <h2 class="section-title">Our Facilities</h2>
+        <h2 class="section-title" id="facilitiesTitle">Our Facilities</h2>
         <div class="row g-4">
           <div class="col-md-3">
-            <div class="card p-4 text-center">
+            <div class="card p-4 text-center facility-card">
               <i class="bi bi-hospital display-5"></i>
               <h5 class="mt-3">Modern Rooms</h5>
             </div>
           </div>
           <div class="col-md-3">
-            <div class="card p-4 text-center">
+            <div class="card p-4 text-center facility-card">
               <i class="bi bi-cpu display-5"></i>
               <h5 class="mt-3">Advanced Equipment</h5>
             </div>
           </div>
           <div class="col-md-3">
-            <div class="card p-4 text-center">
+            <div class="card p-4 text-center facility-card">
               <i class="bi bi-person-heart display-5"></i>
               <h5 class="mt-3">Expert Care</h5>
             </div>
           </div>
           <div class="col-md-3">
-            <div class="card p-4 text-center">
+            <div class="card p-4 text-center facility-card">
               <i class="bi bi-clock-history display-5"></i>
               <h5 class="mt-3">24/7 Support</h5>
             </div>
@@ -185,45 +185,45 @@
         </div>
       </div>
     </section>
-    <section class="bg-primary text-center text-white">
+    <section class="bg-primary text-center text-white" id="ctaSection">
       <div class="container">
-        <h2 class="text-white">Your Health Is Our Priority</h2>
-        <p>Schedule your appointment with Horizon Healthcare today.</p>
-        <a href="appointment.html" class="btn btn-warning">
+        <h2 class="text-white" id="ctaTitle">Your Health Is Our Priority</h2>
+        <p id="ctaDescription">Schedule your appointment with Horizon Healthcare today.</p>
+        <a href="appointment.html" class="btn btn-warning" id="ctaButton">
           Book Appointment
         </a>
       </div>
     </section>
-    <footer>
+    <footer id="mainFooter">
       <div class="container">
         <div class="row g-4">
           <div class="col-lg-4">
-            <h5>🌅 Horizon Healthcare</h5>
-            <p>
+            <h5 id="footerBrand">🌅 Horizon Healthcare</h5>
+            <p id="footerDescription">
               Trusted healthcare with modern facilities and experienced
               specialists.
             </p>
           </div>
           <div class="col-lg-4">
-            <h5>Quick Links</h5>
-            <p>Home</p>
-            <p>Doctors</p>
-            <p>Appointment</p>
+            <h5 id="footerQuickLinks">Quick Links</h5>
+            <p><a href="index.html" class="footer-link">Home</a></p>
+            <p><a href="doctors.html" class="footer-link">Doctors</a></p>
+            <p><a href="appointment.html" class="footer-link">Appointment</a></p>
           </div>
           <div class="col-lg-4">
-            <h5>Contact</h5>
-            <p>
+            <h5 id="footerContact">Contact</h5>
+            <p class="contact-info">
               <i class="bi bi-telephone"></i>
               +91 98765 43210
             </p>
-            <p>
+            <p class="contact-info">
               <i class="bi bi-geo-alt"></i>
               Mumbai, India
             </p>
           </div>
         </div>
         <hr />
-        <p class="text-center mb-0">
+        <p class="text-center mb-0" id="copyright">
           © 2026 Horizon Healthcare. All Rights Reserved.
         </p>
       </div>
